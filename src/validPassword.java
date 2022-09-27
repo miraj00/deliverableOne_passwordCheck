@@ -60,20 +60,20 @@ public class validPassword {
             }
             
                
-     // Check if password length >7 and < 12 -------------------------        
+     // Check if password length >=7 and <= 12 -------------------------        
                      
-            if (password.length()>7){
+            if (password.length()>=7){
                 minLength = true;
                 } else {
-            	System.out.println("Password must be greater than 7 Characters Long");
+            	System.out.println("Password must be atleast 7 Characters Long");
                 minLength = false;
             };
 
             
-            if (password.length()<12){
+            if (password.length()<=12){
                 maxLength = true;
                } else {
-            	System.out.println("Password must be less than 12 Characters Long");
+            	System.out.println("Password can be maximum 12 Characters Long");
                 maxLength = false;
             };         
             
